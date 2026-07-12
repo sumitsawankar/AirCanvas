@@ -1,4 +1,4 @@
-# AirCanvas AI – Gesture-Based Virtual Drawing Application
+# AirCanvas AI – Gesture-Based Virtual Drawing Applications
 
 **AirCanvas AI** is a real-time gesture-controlled virtual drawing application built using **Python, OpenCV, and MediaPipe**. It enables users to draw on a virtual canvas by moving their hand in front of a webcam, eliminating the need for a mouse, stylus, or touchscreen.
 
