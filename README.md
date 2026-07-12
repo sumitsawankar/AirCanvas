@@ -1,120 +1,120 @@
-# 🎨 AirCanvas AI – Gesture-Based Virtual Drawing Application
+# AirCanvas AI – Gesture-Based Virtual Drawing Application
 
-**AirCanvas AI** is a real-time, gesture-controlled virtual drawing application built with **Python, OpenCV, and MediaPipe**. It transforms your webcam into an intelligent drawing interface, allowing you to create digital sketches in the air using only your hand gestures—no mouse, stylus, or touchscreen required.
+**AirCanvas AI** is a real-time gesture-controlled virtual drawing application built using **Python, OpenCV, and MediaPipe**. It enables users to draw on a virtual canvas by moving their hand in front of a webcam, eliminating the need for a mouse, stylus, or touchscreen.
 
-By leveraging **Computer Vision** and **AI-powered hand tracking**, AirCanvas AI detects your hand movements in real time and converts them into smooth digital strokes on a virtual canvas.
+The application uses Computer Vision and AI-powered hand tracking to detect hand movements in real time and convert them into smooth digital drawings.
 
 ---
 
-## ✨ Features
+# Features
 
-### 🖐️ Real-Time Hand Tracking
+## Real-Time Hand Tracking
 
-* Detects and tracks hand movements using **MediaPipe Hands**.
-* Tracks **21 hand landmarks** for accurate gesture recognition.
-* Smooth and responsive interaction through a standard webcam.
+* Detects and tracks hand movements using MediaPipe Hands.
+* Tracks 21 hand landmarks for accurate gesture recognition.
+* Works in real time using a standard webcam.
 
-### ✏️ Air Drawing
+## Air Drawing
 
-* Draw naturally by moving your **index finger** in the air.
-* Real-time rendering with smooth brush strokes.
+* Draw by moving your index finger in the air.
+* Smooth and responsive brush strokes.
 * Touch-free drawing experience.
 
-### 🎨 Multiple Drawing Colors
+## Multiple Drawing Colors
 
-Choose from multiple brush colors:
+Available brush colors include:
 
-* 🔴 Red
-* 🟢 Green
-* 🔵 Blue
-* 🟡 Yellow
+* Red
+* Green
+* Blue
+* Yellow
 
-### 🧽 Gesture-Based Eraser
+## Gesture-Based Eraser
 
-* Switch to **Eraser Mode** using a predefined hand gesture.
-* Remove unwanted strokes naturally without changing tools manually.
+* Activate eraser mode using a predefined hand gesture.
+* Remove unwanted drawings naturally without switching tools manually.
 
-### 🖥️ Live Virtual Canvas
+## Live Virtual Canvas
 
-* Drawings are displayed on a transparent virtual canvas over the live webcam feed.
-* Creates the illusion of drawing directly in the air.
+* Drawings are rendered on a transparent virtual canvas over the live webcam feed.
+* Creates the effect of drawing directly in the air.
 
-### ⚡ Smooth Drawing Experience
+## Smooth Drawing Experience
 
-* Finger positions are smoothed to minimize jitter.
-* Continuous line rendering provides a natural writing experience.
+* Finger coordinates are smoothed to reduce jitter.
+* Continuous line rendering provides natural handwriting and drawing.
 
-### 💾 Save Drawings
+## Save Drawings
 
-* Save your artwork as an image (`.png`) with a single action.
-* Automatically generates sequential filenames without overwriting previous drawings.
+* Save drawings as PNG images.
+* Automatically generates sequential filenames without overwriting existing files.
 
-### 🧹 Clear Canvas
+## Clear Canvas
 
-* Instantly clear the entire drawing canvas and start a new sketch.
-
----
-
-# 🛠️ Tech Stack
-
-* **Python**
-* **OpenCV**
-* **MediaPipe**
-* **NumPy**
-* **Computer Vision**
-* **Machine Learning (MediaPipe Hand Tracking)**
+* Instantly clear the entire drawing canvas and begin a new drawing.
 
 ---
 
-# ✋ Gesture Guide
+# Technology Stack
 
-| Gesture                             | Mode           | Action                     |
-| ----------------------------------- | -------------- | -------------------------- |
-| ☝️ Index Finger Up                  | Draw Mode      | Draw on the virtual canvas |
-| ✌️ Index + Middle Finger            | Selection Mode | Select colors or tools     |
-| 🖐️ Open Palm                       | Eraser Mode    | Erase existing drawings    |
-| ✊ Hand Not Detected / Other Gesture | Idle           | No drawing                 |
-
----
-
-# 🎨 Available Tools
-
-* 🔴 Red Brush
-* 🟢 Green Brush
-* 🔵 Blue Brush
-* 🟡 Yellow Brush
-* 🧽 Eraser
-* 🗑️ Clear Canvas
-* 💾 Save Drawing
+* Python
+* OpenCV
+* MediaPipe
+* NumPy
+* Computer Vision
+* Machine Learning (MediaPipe Hand Tracking)
 
 ---
 
-# ⌨️ Keyboard Shortcuts
+# Gesture Guide
 
-| Key   | Action                   |
-| ----- | ------------------------ |
-| **Q** | Quit the application     |
-| **C** | Clear the canvas         |
-| **S** | Save the current drawing |
+| Gesture               | Mode           | Action                     |
+| --------------------- | -------------- | -------------------------- |
+| Index Finger Up       | Draw Mode      | Draw on the virtual canvas |
+| Index + Middle Finger | Selection Mode | Select colors or tools     |
+| Open Palm             | Eraser Mode    | Erase existing drawings    |
+| Other Gestures        | Idle           | No drawing                 |
 
 ---
 
-# 📂 Project Structure
+# Available Tools
+
+* Red Brush
+* Green Brush
+* Blue Brush
+* Yellow Brush
+* Eraser
+* Clear Canvas
+* Save Drawing
+
+---
+
+# Keyboard Shortcuts
+
+| Key | Action                   |
+| --- | ------------------------ |
+| Q   | Quit the application     |
+| C   | Clear the canvas         |
+| S   | Save the current drawing |
+
+---
+
+# Project Structure
 
 ```text
 AirCanvas-AI/
 │
-├── app.py                 # Main application
-├── requirements.txt       # Project dependencies
-├── assets/                # Icons and UI assets
-├── saved_drawings/        # Saved drawings
+├── app.py
+├── requirements.txt
+├── assets/
+├── saved_drawings/
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
-# 🚀 Installation
+# Installation
 
 ## 1. Clone the Repository
 
@@ -154,55 +154,55 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run the Application
+# Run the Application
 
 ```bash
 python app.py
 ```
 
-Once the application starts:
+After launching the application:
 
 1. Allow webcam access.
 2. Show your hand to the camera.
-3. Raise your **index finger** to start drawing.
+3. Raise your index finger to start drawing.
 4. Select colors by hovering over the toolbar.
-5. Use the **open palm gesture** to activate the eraser.
+5. Use the open palm gesture to activate the eraser.
 6. Save or clear your drawing when needed.
 
 ---
 
-# 📸 How It Works
+# How It Works
 
-1. Webcam captures live video.
+1. The webcam captures live video.
 2. MediaPipe detects the user's hand.
-3. The system identifies **21 hand landmarks**.
+3. The system identifies 21 hand landmarks.
 4. The index finger tip is tracked continuously.
 5. Finger movement is converted into drawing strokes.
-6. Gestures are recognized to switch between drawing, color selection, and erasing.
+6. Gestures are recognized for drawing, color selection, and erasing.
 7. The virtual canvas is merged with the live webcam feed and displayed in real time.
 
 ---
 
-# 🌟 Applications
+# Applications
 
-* 🎓 Smart Classrooms
-* 🖥️ Interactive Presentations
-* 🎨 Digital Art & Sketching
-* 📚 E-learning
-* 🤖 Computer Vision Demonstrations
-* 🧠 AI & Machine Learning Projects
-* 👨‍💻 Human–Computer Interaction (HCI)
+* Smart Classrooms
+* Interactive Presentations
+* Digital Art and Sketching
+* E-learning
+* Computer Vision Demonstrations
+* AI and Machine Learning Projects
+* Human–Computer Interaction (HCI)
 
 ---
 
-# 🔮 Future Enhancements
+# Future Enhancements
 
 * Multiple brush sizes
 * More color options
-* Undo & Redo functionality
-* Shape recognition (Circle, Rectangle, Triangle)
+* Undo and Redo functionality
+* Shape recognition
 * Handwriting-to-text conversion
-* Voice-controlled commands
+* Voice commands
 * Multi-hand support
 * PDF export
 * Cloud storage integration
@@ -210,26 +210,20 @@ Once the application starts:
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
-Contributions are welcome! Feel free to fork the repository, improve the project, and submit a pull request. Suggestions, feature requests, and bug reports are always appreciated.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it for educational and personal projects.
+Contributions are welcome. Feel free to fork the repository, improve the project, and submit a pull request. Feature requests, bug reports, and suggestions are always appreciated.
 
 ---
 
-# ⭐ Support
+# License
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub. It helps others discover the project and supports future development.
+This project is licensed under the **MIT License**.
 
 ---
 
-## 👨‍💻 Author
+# Author
 
 **Sumit Sawankar**
 
-*Building AI-powered applications with Python, Computer Vision, and Machine Learning.*
+Building AI-powered applications using Python, Computer Vision, and Machine Learning.
